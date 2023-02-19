@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="garden">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive</title>
+    <link rel="stylesheet" href="/css/custome.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <div class="navbar bg-base-100 shadow-xl lg:px-12">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </label>
+
+                </div>
+                <div class="wrapper">
+                    <a class="btn btn-ghost normal-case block text-xl"><span>Interactive</span> </a>
+                    <a class="btn btn-ghost normal-case"><span>Geometry Genius</span> </a>
+                </div>
+            </div>
+
+            <div class="navbar-end wrapper">
+                <a href="Blog.html" target="_blank" class="btn btn-ghost"><span>Blog</span></a>
+            </div>
+        </div>
+    </header>
+    <section class="container mx-auto mt-5 flex flex-col md:flex-row lg:justify-around lg:flex-row">
+        <div class="products-details w-full md:w-[60%] lg:w-[75%] grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="card w-full bg-base-100 text-center shadow-xl h-auto">
+                <figure class="px-10 pt-10">
+                    <img src="/images/triangle.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title" id="title-name">Triangle</h2>
+                    <p>Area (A) = 0.5 × b × h</p>
+                    <div class="flex justify-between">
+                        <div class="flex mr-3.5">
+                            <input placeholder="b" class="w-24 mr-2" type="text" name="" id="b-field">
+                            <p>cm</p>
+                        </div>
+                        <div class="flex mr-3.5">
+                            <input placeholder="h" class="w-24 mr-2" type="text" name="" id="h-field">
+                            <p>cm</p>
+                        </div>
+
+                    </div>
+                    <div class="w-100 mt-2 wrapper">
+                        <a href="#" id="first-button"><span>Calculate</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card w-full bg-base-100 text-center shadow-xl h-auto">
+                <figure class="px-10 pt-10">
+                    <img src="/images/rectangle.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title">Rectangle</h2>
+                    <p>Area (A) = W × I</p>
+                    <div class="flex justify-between">
+                        <div class="flex mr-3.5">
+                            <input placeholder="W" class="w-24 mr-2" type="text" name="" id="">
+                            <p>cm</p>
+                        </div>
+                        <div class="flex mr-3.5">
+                            <input placeholder="I" class="w-24 mr-2" type="text" name="" id="">
+                            <p>cm</p>
+                        </div>
+
+                    </div>
+                    <div class="w-100 mt-2 wrapper">
+                        <a href="#"><span>Calculate</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card w-full bg-base-100 text-center shadow-xl h-auto">
+                <figure class="px-10 pt-10">
+                    <img src="/images/parallelogram.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title">Parallelogram</h2>
+                    <p>Area (A) = b × h</p>
+                    <div class="flex justify-between">
+                        <div class="flex mr-3.5">
+                            <input placeholder="b" class="w-24 mr-2" type="text" name="" id="">
+                            <p>cm</p>
+                        </div>
+                        <div class="flex mr-3.5">
+                            <input placeholder="h" class="w-24 mr-2" type="text" name="" id="">
+                            <p>cm</p>
+                        </div>
+
+                    </div>
+                    <div class="w-100 mt-2 wrapper">
+                        <a href="#"><span>Calculate</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card w-full bg-base-100 text-center shadow-xl h-auto">
+                <figure class="px-10 pt-10">
+                    <img src="/images/rhombus.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title">Rhombus</h2>
+                    <p>Area (A) = 0.5 × d<sub>1</sub> × d<sub>1</sub> </p>
+                    <div class="flex justify-between">
+                        <div class="flex mr-3.5">
+                            <input placeholder="d1" class="w-24 mr-2" type="text" name="" id="">
+                            <p>cm</p>
+                        </div>
+                        <div class="flex mr-3.5">
+                            <input placeholder="d2" class="w-24 mr-2" type="text" name="" id="">
+                            <p>cm</p>
+                        </div>
+
+                    </div>
+                    <div class="w-100 mt-2 wrapper">
+                        <a href="#"><span>Hover Me!</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card w-full bg-base-100 text-center shadow-xl h-auto">
+                <figure class="px-10 pt-10">
+                    <img src="/images/pentagon.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title">Pentagon</h2>
+                    <p>Area (A) = 0.5 × p × b </p>
+                    <div class="flex justify-between">
+                        <div class="flex mr-3.5">
+                            <input placeholder="p" class="w-24 mr-2" type="text" name="" id="">
+                            <p>cm</p>
+                        </div>
+                        <div class="flex mr-3.5">
+                            <input placeholder="b" class="w-24 mr-2" type="text" name="" id="">
+                            <p>cm</p>
+                        </div>
+
+                    </div>
+                    <div class="w-100 mt-2 wrapper">
+                        <a href="#"><span>Hover Me!</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card w-full bg-base-100 text-center shadow-xl h-auto">
+                <figure class="px-10 pt-10">
+                    <img src="/images/ellipse.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title">Ellipse</h2>
+                    <p>Area (A) = πab </p>
+                    <div class="flex justify-between">
+                        <div class="flex mr-3.5">
+                            <input placeholder="a" class="w-24 mr-2" type="text" name="" id="">
+                            <p>cm</p>
+                        </div>
+                        <div class="flex mr-3.5">
+                            <input placeholder="b" class="w-24 mr-2" type="text" name="" id="">
+                            <p>cm</p>
+                        </div>
+
+                    </div>
+                    <div class="w-100 mt-2 wrapper">
+                        <a href="#"><span>Calculate</span></a>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <div>
+            <h1 class="cart-details text-2xl text-center font-semibold underline w-full">Aria Calculation</h1>
+            <div class="overflow-x-auto mx-auto mt-5">
+                <table class="table w-full">
+                    <!-- head -->
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Title</th>
+                            <th>Aria</th>
+                            <th>Convert</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-container">
+                        <!-- <tr>
+                        <th>1</th>
+                        <td>Cy Ganderton</td>
+                        <td>Quality Control Specialist</td>
+                        <td>Blue</td>
+                        </tr> -->
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <script src="/js/index.js"></script>
+    <script src="/js/randomColor.js"></script>
+</body>
+
+</html>
