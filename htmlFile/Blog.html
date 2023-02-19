@@ -1,14 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="garden">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Site</title>
+    <link rel="stylesheet" href="/css/custome.css">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
-    
+    <header>
+        <div class="navbar bg-base-100 shadow-xl lg:px-12">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </label>
+
+                </div>
+                <div class="wrapper">
+                    <a class="btn btn-ghost normal-case block text-xl"><span>Interactive</span> </a>
+                    <a class="btn btn-ghost normal-case"><span>Geometry Genius</span> </a>
+                </div>
+            </div>
+
+            <div class="navbar-end wrapper">
+                <a href="Blog.html" target="_blank" class="btn btn-ghost"><span>Blog</span></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- blog -->
+
+    <section class="dark:bg-gray-800 h-100 dark:text-gray-100">
+        <div class="container flex flex-col justify-center p-4 mx-auto md:p-8">
+            <p class="p-2 text-sm font-medium tracking-wider text-center uppercase">How it works</p>
+            <h2 class="mb-12 text-4xl font-bold leading-none text-center sm:text-5xl">Frequently Asked Questions</h2>
+            <div class="grid gap-10 md:gap-8 sm:p-3 md:grid-cols-2 lg:px-12 xl:px-32">
+                <div>
+                    <h3 class="font-semibold">What is DOM and what is the purpose of DOM?</h3>
+                    <p class="mt-1 dark:text-gray-400"> DOM is The Document Object Model, or DOM for short, is a
+                        programming interface for web documents. <br>A web page is a document that can be either
+                        displayed in the browser window or as the HTML source. In both cases, it is
+                        the same document but the Document Object Model (DOM) representation allows it to be
+                        manipulated. As an object-oriented
+                        representation of the web page, it can be modified with a scripting language such as JavaScript.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="font-semibold">How will you select HTML elements using DOM? Name the DOM methods.</h3>
+                    <p class="mt-1 dark:text-gray-400">The HTML DOM can be accessed with JavaScript.
+                        The easiest way to access a single element in the DOM is by its unique ID. We can get an element
+                        by ID with the
+                        getElementById() method of the document object.
+                        The class attribute is used to access one or more specific elements in the DOM. We can get all
+                        the elements with a
+                        given class name with the getElementsByClassName() method. etc..
+                    </p>
+                </div>
+                <div>
+                    <h3 class="font-semibold">What is event bubble?</h3>
+                    <p class="mt-1 dark:text-gray-400">Event Bubbling is a concept in the DOM (Document Object Model).
+                        It happens when an element receives an event, and that
+                        event bubbles up to its parent and ancestor elements in the DOM tree until
+                        it gets to the root element.</p>
+                </div>
+                <div>
+                    <h3 class="font-semibold">What is a callback function and why will you use it?</h3>
+                    <p class="mt-1 dark:text-gray-400">A callback is a function passed as an argument to another function. JavaScript functions are executed in the sequence they are called. Not in the sequence they are defined.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body>
+
 </html>
