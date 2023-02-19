@@ -5,7 +5,7 @@ function displayData(titleName, total) {
     tr.innerHTML = `
     <td>${1}</td>
     <td>${titleName}</td>
-    <td>${total}</td>
+    <td>${total}cm<sup>2</sup></td>
     <td>
     <button class="btn btn-xs bg-blue-700 text-[9px] w-100">Convert to m<sup>2</sup></button>
     </td>
