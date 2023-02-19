@@ -1,4 +1,5 @@
 // display data
+let serial = 0;
 function displayData(titleName, total) {
 
     //error message handalling
@@ -15,7 +16,7 @@ function displayData(titleName, total) {
     const container = document.getElementById("table-container");
     const tr = document.createElement("tr");
     tr.innerHTML = `
-        <td>${1}</td>
+        <td>${serial}</td>
         <td>${titleName}</td>
         <td>${total}cm<sup>2</sup></td>
         <td>
@@ -29,7 +30,7 @@ function displayData(titleName, total) {
     conversionBtn.addEventListener("click", () => {
         const totalInM2 = total / 10000;
         tr.innerHTML = `
-            <td>${1}</td>
+            <td>${serial}</td>
             <td>${titleName}</td>
             <td>${totalInM2}m<sup>2</sup></td>
             <td></td>
