@@ -5,9 +5,9 @@ document.getElementById('first-button').addEventListener('click', function (e) {
     const secondInput = e.target.parentNode.parentNode.parentNode.children[2].children[1].children[0].value;
     const num = parseFloat(0.5 * firstInput * secondInput);
     const total = num.toFixed(2)
-
-    // if (typeof total !== "number" && typeof total === "boolean" && typeof total === "object") {
-    //     throw new Error("Field must be a number, boolean, or object");
+    
+    // if (typeof total !== "number") {
+    //     return alert("Number must be greater than or equal to 0.");
     // }
 
     // passing data to displayData
